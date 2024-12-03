@@ -1,22 +1,22 @@
 
-Project: Data generation and knowledge sharing for robust intrusion detection in IoT systems
+** Project: Data generation and knowledge sharing for robust intrusion detection in IoT systems **
 
-Funding: Vinnova - Sweden's Inoovation Agenncy
+** Funding: Vinnova - Sweden's Inoovation Agenncy **
 
-Authors: Amin Kaveh, Noah Wassberg
+** Authors: Amin Kaveh, Noah Wassberg **
 
-Institution: Department of Information Technology, Uppsala University, Sweden
+** Institution: Department of Information Technology, Uppsala University, Sweden **
 
-Dates: April 2022 - October 2024
+** Dates: April 2022 - October 2024 **
 
-Contact information: christian.rohner@it.uu.se; andreas.johnsson@it.uu.se
+** Contact information: christian.rohner@it.uu.se; andreas.johnsson@it.uu.se **
 
-manuscript: Amin Kaveh, Noah Wassberg, Christian Rohner, and Andreas Johnsson. "On LSTM Model Generalizability for Intrusion Detection in IoT Networks." NOMS, 2025.
+** manuscript: Amin Kaveh, Noah Wassberg, Christian Rohner, and Andreas Johnsson. "On LSTM Model Generalizability for Intrusion Detection in IoT Networks." NOMS, 2025. **
 
-Dataset: https://ieee-dataport.org/open-access/data-generation-and-knowledge-sharing-robust-intrusion-detection-iot-systems
+** Dataset: **  https://ieee-dataport.org/open-access/data-generation-and-knowledge-sharing-robust-intrusion-detection-iot-systems
 
 
-
+---------------------------------------------------------------------------------------------------------------------------------
 
 Step 1 - Use obeservableToSink.py to preprocess data (mote-output.log file in Cooja's output folder). By running this code, you will have a csv file in the outputfolder, known as features_timeseries_XX_sec.csv. XX is the time interval (binsize in seconds) over which the code calculates the mean and standard deviation of features in UDP packets received by the sink node. In our paper XX = 60 seconds.
 
