@@ -1,7 +1,7 @@
 
 **Project: Data generation and knowledge sharing for robust intrusion detection in IoT systems**
 
-**Funding: Vinnova - Sweden's Inoovation Agenncy**
+**Funding: Vinnova - Sweden's Inovation Agenncy**
 
 **Authors: Amin Kaveh, Noah Wassberg**
 
