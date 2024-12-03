@@ -11,7 +11,7 @@
 
 **Contact information: christian.rohner@it.uu.se; andreas.johnsson@it.uu.se**
 
-**manuscript: Amin Kaveh, Noah Wassberg, Christian Rohner, and Andreas Johnsson. "On LSTM Model Generalizability for Intrusion Detection in IoT Networks." NOMS, 2025.**
+**Manuscript: Amin Kaveh, Noah Wassberg, Christian Rohner, and Andreas Johnsson. "On LSTM Model Generalizability for Intrusion Detection in IoT Networks." NOMS, 2025.**
 
 **Dataset:**  https://ieee-dataport.org/open-access/data-generation-and-knowledge-sharing-robust-intrusion-detection-iot-systems
 
