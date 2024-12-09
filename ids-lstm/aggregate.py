@@ -23,7 +23,7 @@ import argparse
 
 
 """
-Function in this file aggregate data from all Cooja scenarios upon the needs.
+Functions in this file aggregate data from all Cooja scenarios upon the needs.
 For example to test generalizability of IDS models on different attack types (BH and DIS), 
 we aggregate all BH data to train IDS model 1 and aggregate all DIS data to train IDS model 2.
 """
