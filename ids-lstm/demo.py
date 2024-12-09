@@ -50,10 +50,9 @@ import argparse
 # 1 - extracts all the observable messages in the sink node
 # 2 - calculates the mean and standard deviation of all observed messages in each 60 seconds (binSize) 
 # 3 - save the resulting 14 features and corresponding labels in the features_timeseries_60_sec.csv file. The file is located in the same folder.
-obs.MyDataSet(dataAdd = "/Users/amin/Documents/Amin/rpl-udp-base-5-1-attack-blackhole-4-dt-1", binSize = 60)
-obs.MyDataSet(dataAdd = "/Users/amin/Documents/Amin/rpl-udp-base-5-1-attack-blackhole-4-dt-1", binSize = 60)
-obs.MyDataSet(dataAdd = "/Users/amin/Documents/Amin/rpl-udp-base-5-1-attack-blackhole-4-dt-1", binSize = 60)
-
+obs.MyDataSet(dataAdd = "/path/to/scenario/folder1/", binSize = 60)
+obs.MyDataSet(dataAdd = "/path/to/scenario/folder2/", binSize = 60)
+obs.MyDataSet(dataAdd = "/path/to/scenario/folder3/", binSize = 60)
 
 
 
@@ -67,14 +66,14 @@ trainDataList = []
 testDataList = []
 
 # training data
-data1 = pd.read_csv("/Users/amin/Documents/Amin/rpl-udp-base-5-1-attack-blackhole-4-dt-1/features_timeseries_60_sec.csv", sep = ',')
+data1 = pd.read_csv("/path/to/scenario/folder1/features_timeseries_60_sec.csv", sep = ',')
 data1 = data1.drop(['Unnamed: 0'],axis = 1)       # if there is a column for row numbers
 trainDataList.append(data1)
-data2 = pd.read_csv("/Users/amin/Documents/Amin/rpl-udp-base-5-1-attack-blackhole-4-dt-1/features_timeseries_60_sec.csv", sep = ',')
+data2 = pd.read_csv("/path/to/scenario/folder2/features_timeseries_60_sec.csv", sep = ',')
 data2 = data2.drop(['Unnamed: 0'],axis = 1)       # if there is a column for row numbers
 trainDataList.append(data2)
 # testing data
-data3 = pd.read_csv("/Users/amin/Documents/Amin/rpl-udp-base-5-1-attack-blackhole-4-dt-1/features_timeseries_60_sec.csv", sep = ',')
+data3 = pd.read_csv("/path/to/scenario/folder3/features_timeseries_60_sec.csv", sep = ',')
 data3 = data3.drop(['Unnamed: 0'],axis = 1)       # if there is a column for row numbers
 testDataList.append(data3)
 
