@@ -19,13 +19,11 @@
 ---------------------------------------------------------------------------------------------------------------------------------
 
 ## Demo: From Cooja's files to evaluate an IDS model
-
 Have a look at the `demo.py` file
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
 ## To reproduce the results in the paper, follow the following steps:
-
 **Step 1** - Use `obeservableToSink.py` to preprocess data (mote-output.log file in Cooja's output folder). By running this code, you will have a csv file in the outputfolder, known as features_timeseries_XX_sec.csv. XX is the time interval (binsize in seconds) over which the code calculates the mean and standard deviation of features in UDP packets received by the sink node. In our paper XX = 60 seconds.
 
 **Step 2** - To use a LSTM model we have to decide about the sequence length of input data. As we have multiple timeseries (each Cooja's scenario generates a timeseries data), we can not easily use the sequence length hyperparameter in the LSTM model. Therefore, in the preprocessing phase we generate the sequences and save them in each scenario's folder and then we set the sequence length hyperparameter in the LSTM model as 1. To generate these sequences use `seqMaker.py`. In our paper we used sequence_length = 10 (10 minutes) as the input.
